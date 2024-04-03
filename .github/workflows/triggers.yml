@@ -25,6 +25,6 @@ jobs: #Definición de los jobs
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - name: Run hola mundo
-        run: node hola-mundo.js
+      - name: Run Main
+        run: node main.js
   

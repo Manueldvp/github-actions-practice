@@ -1,0 +1,13 @@
+name: aprendiendo sobre las variable
+run-name: Aqui estoy aprendiendo el uso de variables
+on: [push]
+jobs:
+  monstrando-variables:
+    runs-on: ubuntu-latest
+    env:
+      NOMBRE_PROTA: Manuel
+    steps:
+      - name: saludar al prota
+        run: echo "hola como estas ${{ env.NOMBRE_PROTA }} cool"
+    
+    
